@@ -4,7 +4,7 @@
   <groupId>springTest</groupId>
   <artifactId>springMVC</artifactId>
   <packaging>war</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <name>springMVC Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -20,7 +20,21 @@
       <version>4.3.3.RELEASE</version>
     </dependency>
   </dependencies>
+
+  <distributionManagement>
+    <repository>
+      <id>localRepository</id>
+      <url>file:D:/mavenWare</url>
+    </repository>
+    <snapshotRepository>
+      <id>localRepository</id>
+      <url>file:D:/mavenWare</url>
+    </snapshotRepository>
+  </distributionManagement>
+
   <build>
     <finalName>springMVC</finalName>
   </build>
+
+
 </project>
